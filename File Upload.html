@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> File Upload </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="edit-profile.css">
+        <meta name="viewport" content="width=device-width, inital-scale=1" />
+    </head>
+    <body>
+        <div class="col-sm-8">
+            <center><h2> File Upload </h2></center><br /><br />
+        </div>
+        <!-- end of heading-->
+
+        <!-- Selection of File-->
+      <div class="row">
+        <div class="col-md-12">
+          <form action="" name="basicForm" class="form-horizontal form-bordered" method="POST" novalidate>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h1 class="panel-title"> File </h1>
+                  <p> Please select a file you will like to upload </p>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <div class="col-sm-9">
+                            <input ng-model="user.name" type="file" name="name" id= "file upload" class="form-control" placeholder="Type your name..." onchange="readFile();" required />
+                            <img src="" alt="The image file will be shown here." class="result" />
+                          </div>
+                    </div>
+                    <div class="col-sm-9">
+                    
+                        <button type="submit" class="btn btn-default btn-can"> Upload </button>
+                        
+                        <button class="btn btn-primary btn-don"> select anothe File </button><br /><br />
+        
+                    </div>
+                </div>
+              
+  
+              <script type="text/javascript">
+                  function readFile() {
+                      var reader = new FileReader();
+                      var file = document.getElementById("file upload").file[0];
+  
+                      reader.onload = function(e) {
+                          document.getElementsByClassName("result").src = e.target.result;
+                      }
+  
+                      reader.readAsDataURL(file);
+                  }
+              </script>
+            </div>
+          </form>
+        </div>
+       </div>
+    </body>
+</html>
+            

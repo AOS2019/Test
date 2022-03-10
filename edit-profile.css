@@ -1,0 +1,39 @@
+body {
+    background-color: lightgray;
+}
+.btn-can {
+    float: left;
+  }
+  .btn-don {
+    float: right;
+  }
+h2 {
+    display: inline;
+}
+.col-sm-9 {
+    margin-left: 100px;
+
+}
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #FFFF00;
+    padding: 10px;
+}
+u {
+    font-size: 20px;
+}
+.fa-photo {
+    padding-top: 60%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.photo{
+    width: 200px;
+    height: 150px;
+    border: 5px solid red;
+}
+ 

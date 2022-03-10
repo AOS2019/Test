@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Edit Profile </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="edit-profile.css">
+        <meta name="viewport" content="width=device-width, inital-scale=1" />
+    </head>
+    <body>
+			<!-- Personal Info form -->
+      <div class="row">
+        <div class="col-md-12">
+          <form action="" name="basicForm" class="form-horizontal form-bordered" method="POST" novalidate>
+          <div class="panel panel-default">
+              <br /><br />
+            <center>
+            <button type="reset" class="btn btn-default btn-can">Cancel</button>
+            <h2><i class="fa fa-pencil"></i> EDIT PROFILE </h2>
+            <button class="btn btn-primary btn-don">Done</button><br /><br />
+            <div class= "photo">
+                <i class="fa fa-photo"></i>
+            </div>
+            
+                <i><u> Change Profile photo </u></i>
+            </center><br /><br />
+              <div class="panel-heading">
+                <h1 class="panel-title"> Personal Info </h1>
+                <p> Please provide your Full name, Username, Skills, Services, Mobile Number and email address (won't be published). </p>
+              </div>
+              <div class="panel-body">
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Full Name <span class="asterisk">*</span></label>
+                  <div class="col-sm-9">
+                    <input ng-model="user.name" type="text" name="name" class="form-control" placeholder="Type your name..." required />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Username <span class="asterisk">*</span></label>
+                    <div class="col-sm-9">
+                      <input ng-model="user.name" type="text" name="name" class="form-control" placeholder="Type your name..." required />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Skills and Services <span class="asterisk">*</span></label>
+                    <div class="col-sm-9">
+                      <textarea ng-model="user.linkedin.summary" rows="5" class="form-control" placeholder="Type your comment..." required></textarea>
+                    </div>
+                  </div>
+
+                <div class="form-group">
+                    <label class="col-sm-3 control-label"> Mobile Number <span class="asterisk">*</span></label>
+                    <div class="col-sm-9">
+                      <input ng-model="user.linkedin.headline" type="number" name="headline" class="form-control" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Email <span class="asterisk">*</span></label>
+                  <div class="col-sm-9">
+                    <input ng-model="user.email" type="email" name="email" class="form-control" placeholder="Type your email..." required />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Website <i>(Optional)</i></label>
+                    <div class="col-sm-9">
+                      <input ng-model="user.linkedin.headline" type="text" name="headline" class="form-control" />
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label"> Bussiness Address <i>(Optional)</i></label>
+                    <div class="col-sm-9">
+                      <input ng-model="user.linkedin.headline" type="text" name="headline" class="form-control" />
+                    </div>
+                  </div>
+
+
+              </div><!-- panel-body -->
+          </div><!-- panel -->
+
+          </form>
+        </div><!-- col-md-6 -->
+      </div>
+      <!-- end personal info form -->
+
+    </body>
+</html>
